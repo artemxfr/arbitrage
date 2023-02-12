@@ -296,9 +296,9 @@ export function Main() {
                                 </Text>) : (null)} 
                             <Text textAlign={'left'}>Estimated Output:<b>{' '}
                                 {
-                                estimatedOutput > 0 && estimatedOutput !== undefined ? (web3.utils.fromWei(''+estimatedOutput, 'ether')) : (0)
+                                estimatedOutput > 0 ? (web3.utils.fromWei(''+estimatedOutput, 'ether')+' '+tickers[tickers.length-1]) : (0)
                                 }
-                                {' '+tickers[tickers.length-1]}</b>
+                                </b>
                             </Text>
                             <Button 
                                 colorScheme={'red'} 
